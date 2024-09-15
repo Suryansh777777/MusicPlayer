@@ -25,4 +25,79 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,body{
+  background-color: black;
+}
+
+.container{
+  position: relative;
+  height: 100vh;
+  overflow:hidden;
+  width: 100vw;
+}
+
+img{
+
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow:visible
+}
+path{
+  fill: transparent;
+ 
+}
+textPath{
+
+  fill: white;
+  
+}
+
+text{
+  text-transform: uppercase;
+}
+
+#text-primary{
+  font-size: 46px;
+  font-family: "Tusker Grotesk", sans-serif;
+}
+#text-secondary{
+  font-family: "PP Neue Montreal", sans-serif;
+  font-size: 20px;
+}
+
+.disk{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+ 
+
+}
+.cover-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+}
